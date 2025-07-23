@@ -1,9 +1,18 @@
-import Image from "next/image";
+
+import FooterSectionComponents from "./components/Footer";
+import HeroSection from "./components/Hero";
+import TestPrepHero from "./components/Hero2";
+import TestPrepClasses from "./components/OurClasses";
+import StudyAbroad from "./components/StudyAbroad";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      No header no footer
-    </div>
+    <>
+    <HeroSection />
+    <TestPrepHero />
+    <TestPrepClasses />
+    <StudyAbroad />
+    <FooterSectionComponents />
+    </>
   );
 }
